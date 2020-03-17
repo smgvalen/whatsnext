@@ -1,10 +1,10 @@
-package com.project.wahtsnext;
+package com.project.whatsnext;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WahtsnextApplicationTests {
+class WhatsnextApplicationTests {
 
   @Test
   void contextLoads() {
