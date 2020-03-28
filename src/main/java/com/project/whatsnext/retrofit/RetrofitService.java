@@ -15,8 +15,8 @@ public class RetrofitService {
         .build();
   }
 
- /* public MovieAPI getMovieAPI() {
-    return getConnectionToMovieApi(System.getenv("API_URL")).create(MovieAPI.class);
-  } */
+  public TMDbAPI getMovieAPI() {
+    return getConnectionToMovieApi(System.getenv("API_URL")).create(TMDbAPI.class);
+  }
 }
 

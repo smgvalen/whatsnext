@@ -24,9 +24,9 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     compileOnly 'org.projectlombok:lombok:1.18.12'
 
-    compile("org.springframework.boot:spring-boot-starter-security")
+/*    compile("org.springframework.boot:spring-boot-starter-security")
    implementation 'com.auth0:java-jwt:3.8.3'
-    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2' */
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     runtimeOnly 'mysql:mysql-connector-java'
