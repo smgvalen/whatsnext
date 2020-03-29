@@ -1,6 +1,6 @@
-package com.project.whatsnext.tvshows;
+package com.project.whatsnext.repository;
 
-import com.project.whatsnext.tvshows.TVShow;
+import com.project.whatsnext.entity.TVShow;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

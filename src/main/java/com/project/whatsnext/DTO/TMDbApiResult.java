@@ -1,34 +1,29 @@
-package com.project.whatsnext.retrofit;
+package com.project.whatsnext.DTO;
 
 public class TMDbApiResult {
 
   private int id;
-  private boolean in_production;
   private String original_language;
-  private String last_air_date;
+  private String first_air_date;
   private String name;
   private String original_name;
   private int number_of_episodes;
   private int number_of_seasons;
-  private int popularity;
-  private Object[] seasons;
+  private double vote_average;
 
-  public TMDbApiResult() {
-  }
+ // public TMDbApiResult() { }
 
-  public TMDbApiResult(int id, boolean in_production, String original_language,
-      String last_air_date, String name, String original_name, int number_of_episodes,
-      int number_of_seasons, int popularity, Object[] seasons) {
+  public TMDbApiResult(int id, String original_language,
+      String first_air_date, String name, String original_name, int number_of_episodes,
+      int number_of_seasons, double vote_average) {
     this.id = id;
-    this.in_production = in_production;
     this.original_language = original_language;
-    this.last_air_date = last_air_date;
+    this.first_air_date = first_air_date;
     this.name = name;
     this.original_name = original_name;
     this.number_of_episodes = number_of_episodes;
     this.number_of_seasons = number_of_seasons;
-    this.popularity = popularity;
-    this.seasons = seasons;
+    this.vote_average = vote_average;
   }
 
   public int getId() {
@@ -39,14 +34,6 @@ public class TMDbApiResult {
     this.id = id;
   }
 
-  public boolean isIn_production() {
-    return in_production;
-  }
-
-  public void setIn_production(boolean in_production) {
-    this.in_production = in_production;
-  }
-
   public String getOriginal_language() {
     return original_language;
   }
@@ -55,12 +42,12 @@ public class TMDbApiResult {
     this.original_language = original_language;
   }
 
-  public String getLast_air_date() {
-    return last_air_date;
+  public String getFirst_air_date() {
+    return first_air_date;
   }
 
-  public void setLast_air_date(String last_air_date) {
-    this.last_air_date = last_air_date;
+  public void setFirst_air_date(String first_air_date) {
+    this.first_air_date = first_air_date;
   }
 
   public String getName() {
@@ -95,19 +82,12 @@ public class TMDbApiResult {
     this.number_of_seasons = number_of_seasons;
   }
 
-  public int getPopularity() {
-    return popularity;
+  public double getVote_average() {
+    return vote_average;
   }
 
-  public void setPopularity(int popularity) {
-    this.popularity = popularity;
+  public void setVote_average(double vote_average) {
+    this.vote_average = vote_average;
   }
 
-  public Object[] getSeasons() {
-    return seasons;
-  }
-
-  public void setSeasons(Object[] seasons) {
-    this.seasons = seasons;
-  }
 }

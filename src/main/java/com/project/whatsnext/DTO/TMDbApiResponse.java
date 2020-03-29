@@ -1,8 +1,7 @@
-package com.project.whatsnext.retrofit;
+package com.project.whatsnext.DTO;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.transform.Result;
 
 public class TMDbApiResponse {
   private int page;
@@ -10,7 +9,7 @@ public class TMDbApiResponse {
   private int total_pages;
   private List<TMDbApiResult> results;
 
-  public TMDbApiResponse(List<Result> results) {
+  public TMDbApiResponse(List<TMDbApiResult> results) {
     results = new ArrayList<>();
   }
 
